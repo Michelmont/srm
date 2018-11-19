@@ -1,0 +1,9 @@
+<div class="row no-gutters">
+  <div class="col-12">
+    <ul>
+      <li *ngFor ="let item of itemsMenu">
+          <a [href]="item.link"><img [src]="item.imagem"><span>{{item.texto}}<img *ngIf ="item.arrow" src="../assets/images/arrow2.png" class="arrow"></span></a>
+      </li>
+    </ul>
+  </div>
+</div>

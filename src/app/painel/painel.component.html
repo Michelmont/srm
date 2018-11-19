@@ -1,0 +1,151 @@
+<div class="row no-gutters">
+  <div class="col-8 spacetop">
+    <p class="breadcrumb">
+      Pagina inicial > Painel de gestão
+    </p>
+    <h1><img src="../assets/images/globo1.png">Painel de Gestão</h1>
+  </div>
+  <div class="col-4">
+      <form class="input-group fheader text-right">
+          <label for="grupo-economico">Produto: </label>
+          <div class="form-group">
+              <select class="select1">
+                  <option>Todos</option>
+                  <option>Filtro 1</option>
+                  <option>Filtro 2</option>
+              </select>
+          </div>
+          <!-- rest of form -->
+        </form>
+  </div>
+</div>
+<div class="row no-gutters content">
+  <div class="col-7 pannel">
+    <div class="col-12 card">
+      <div class="row first">
+            <div class="col-12">
+              <h1 class="card1">Atalhos</h1>
+            </div>
+           </div>
+       <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-8">
+              <div class="row">
+                <div class="col-12 lbtn">
+                  <h3>Operacional</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 lbtn">
+                  <div class="btn btn-primary">
+                    Envio
+                  </div>
+                </div>
+                <div class="col-6 rbtn">
+                  <div class="btn btn-primary">
+                      Assinatura
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-6 lbtn">
+                    <div class="btn btn-primary">
+                        Envio de duplicatas
+                    </div>
+                  </div>
+                  <div class="col-6 rbtn">
+                    <div class="btn btn-primary">
+                        Assinatura digital
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+
+            <div class="col-4 right">
+              <div class="row">
+                <div class="col-12 rbtn lbtn">
+                  <h3>Geral</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 lbtn rbtn">
+                    <div class="btn btn-primary">
+                        Carteira
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-12 lbtn rbtn">
+                      <div class="btn btn-primary">
+                          Instruções
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row last">
+              <div class="col-8">
+                <div class="row">
+                  <div class="col-6 lbtn">
+                    <div class="btn btn-primary">
+                      Nova operação
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="col-5 pannel right">
+    <div class="col-12 card">
+      <div class="row first">
+        <div class="col-6">
+          <h1 class="card1 blue">Alertas</h1>
+        </div>
+        <div class="col-6 text-right">
+            <h3 class="alertas">Últimos 5 dias</h3>
+          </div>
+      </div>
+      <div class="row last">
+        <div class="col-12 alertList">
+          <div class="row no-gutters">
+            <div class="col-6">
+              <span class="alertas">23 Notas Canceladas</span>
+            </div>
+          </div>
+
+
+            <div class="row no-gutters">
+                <div class="col-6">
+                    <span class="alertas">13 Notas Canceladas</span>
+                </div>
+                <div class="col-6 text-right">
+                    <select class="select3"  >
+                        <option *ngFor="let acao of acoes" [value]="acao.value" >{{acao.text}}</option>
+                    </select>
+                </div>
+          </div>
+          <div class="row no-gutters">
+              <div class="col-6">
+                  <span class="alertas">13 Notas Canceladas</span>
+              </div>
+              <div class="col-6 text-right">
+                  <select class="select3"  >
+                      <option *ngFor="let acao of acoes" [value]="acao.value" >{{acao.text}}</option>
+
+                  </select>
+              </div>
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

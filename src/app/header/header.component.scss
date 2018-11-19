@@ -1,0 +1,64 @@
+@import "../../variables.scss";
+
+.row
+{
+  background-color: $background-header;
+}
+
+.first
+{
+  margin-left:4px;
+  padding-right:10px;
+}
+
+.logo
+{
+  padding:15px;
+  padding-left: 25px;
+
+}
+
+
+
+
+
+.input-group-text
+{
+  background-color: #00223c;
+  color: #fff;
+  border: solid 2px #00223c;
+}
+
+.iright
+{
+  border: solid 2px #4895cf;
+
+  background-color:#4895cf;
+}
+
+.input-group{
+  float:right;
+}
+
+label{
+  margin-top: 15px;
+}
+
+.fheader
+{
+  padding-top:15px;
+}
+
+.badge-light {
+  color: #ffffff;
+  background-color: #f8f9fa;
+  border-radius: 100px;
+  background: red;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+#user-icon
+{
+  padding-left:30px;
+}

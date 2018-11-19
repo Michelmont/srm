@@ -1,0 +1,53 @@
+@import "../../variables.scss";
+
+ul
+{
+  padding:0;
+  margin:0;
+  background-color: $background-menu;
+  height: 100%;
+}
+
+ul li
+{
+  width:100%;
+  list-style-type: none;
+
+  border-bottom: #2c6896 solid 2px;
+  padding-left: 0px;
+
+}
+
+ul li a, ul li a:active, ul li a:hover, ul li a:visited{
+  text-decoration:none;
+  vertical-align: middle;
+  color: #fff;
+}
+
+ul>li>a:after {
+  right: 0;
+  border: 8px solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #ebebeb;
+  top: 50%;
+  margin-top: -70px;
+}
+
+img
+{
+  padding:10px;
+  margin-left:10px;
+  width: 60px;
+  height:60px;
+}
+
+img.arrow
+{
+  padding:0;
+  width:18px;
+  height:18px;
+}

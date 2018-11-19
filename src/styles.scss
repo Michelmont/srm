@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+$background: "#ebebeb";
+
+.select1
+{
+  border: solid 2px #8dbce0;
+  padding:5px;
+  padding-right:35px;
+  padding-left:35px;
+  height: 56px;
+  color: #8e8e8e;
+  margin-left:10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background: url("assets/images/arrow1.png") no-repeat;
+  background-size: 15px;
+  background-position: calc(100% - 2.5px) center;
+  background-repeat: no-repeat;
+}
+
+.select2
+{
+  border: solid 2px #00223c;
+  padding:5px;
+  padding-right:35px;
+  padding-left:15px;
+  color: #fff;
+  height: 56px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background: url("assets/images/arrow1.png") no-repeat  #00223c ;
+  background-size: 15px;
+  background-position: calc(100% - 2.5px) center;
+  background-repeat: no-repeat;
+}
+
+.select3
+{
+  border: solid 2px #8dbce0;
+  text-align:center;
+  height: 36px;
+  color: #8e8e8e;
+  font-size: 12px;
+  margin-left:10px;
+  width: 80%;
+  text-align:center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left:45px;
+  padding-right:45px;
+  appearance: none;
+  background: url("assets/images/arrow3.png") no-repeat;
+  background-size: 15px;
+  background-position: calc(100% - 2.5px) center;
+  background-repeat: no-repeat;
+}
+
+.input-group
+{
+  width: auto;
+
+}

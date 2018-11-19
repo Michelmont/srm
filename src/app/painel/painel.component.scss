@@ -1,0 +1,139 @@
+@import "../../variables.scss";
+
+h1
+{
+  color: $background-menu;
+}
+
+img
+{
+  width:50px;
+  height:50px;
+}
+
+.spacetop
+{
+  padding-left:$padding-pannel;
+}
+
+.pannel
+{
+  border-radius:0;
+  padding-left:20px;
+  padding-bottom:20px;
+}
+
+.right
+{
+  padding-right:20px;
+}
+
+h1.card1
+{
+  margin:0;
+  padding: 20px;
+  font-size: 24px;
+  color: #8e8e8e;
+}
+h3.alertas
+{
+  margin:0;
+  padding:30px;
+  margin:0;
+  padding-top:20px;
+
+}
+
+.card
+{
+  border-radius:0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card .first
+{
+  border-bottom: solid 2px #e0e0e0;
+}
+
+
+.card .right
+{
+  border-left: solid 2px #e0e0e0
+}
+
+.btn-primary
+{
+  width:100%;
+  border: solid 2px #8dbce0;
+  color:  #8e8e8e;
+  border-radius:0px;
+  text-align: center;
+  background: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.lbtn
+{
+  padding-left:$padding-pannel;
+}
+
+.rbtn
+{
+  padding-right:$padding-pannel;
+}
+
+.last
+{
+  padding-bottom: 100px;
+}
+
+.last2
+{
+  padding-bottom: 130px;
+}
+
+h3
+{
+  margin-top:10px;
+  font-size:14px;
+  margin-bottom:0;
+}
+.alertList
+{
+  padding-left:$padding-pannel;
+  padding-right:$padding-pannel;
+}
+.alertList .row
+{
+  padding-top:10px;
+  padding-bottom:10px;
+  border-bottom: solid 1px #e0e0e0;
+}
+
+.input-group
+{
+  margin-top: 65px;
+  float:right;
+  padding-right:20px;
+
+}
+.select1
+{
+  padding-left:40px;
+  padding-right:40px;
+}
+
+label{
+  margin-top: 15px;
+}
+.content
+{
+   margin-top:50px;
+}
+
+h1.blue
+{
+  color:#8dbce0;
+}

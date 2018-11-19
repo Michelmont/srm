@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+.row
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $background-header;
+}
+
+input
+{
+
+  float:right;
+  width: 120px;
+  border:0;
+
+}
+
+.fa
+{
+  float:right;
+  color:#8e8e8e;
+  padding-right:10px;
+  font-size:24px;
+}
+
+.input-group
+{
+  float: right;
+}
