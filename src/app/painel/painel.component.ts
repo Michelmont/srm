@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Acoes } from '../classes/Acoes';
+import {AcoesService} from '../Acoes.service'
 @Component({
   selector: 'app-painel',
   templateUrl: './painel.component.html',
@@ -7,22 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PainelComponent implements OnInit {
 
-  acoes = [{
-    value: '001',
-    text: 'Ação 1'
-  },
+  public listaAcoes: Acoes[];
+
+
+  constructor(private acoes:AcoesService) { }
+
+  private carregaAcoes()
   {
-    value: '002',
-    text: 'Ação 2'
-  },
-  {
-    value: '002',
-    text: 'Ação 3'
+    this.acoes.getAcoes().subscribe(
+      acoes => this.listaAcoes = acoes,
+      error => console.log('Erro'),
+      () => console.log('Ações carregadas com sucesso')
+    )
   }
-]
-  constructor() { }
 
   ngOnInit() {
+    this.carregaAcoes()
   }
 
 }

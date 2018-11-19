@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {MenuService} from '../menu.service'
+import { Observable } from 'rxjs';
+import { Menu } from '../classes/menu';
 
 @Component({
   selector: 'app-menu',
@@ -7,30 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  public itemsMenu = [
-    {
-      texto: 'Painel de Gestão',
-      imagem: '../assets/images/globo2.png',
-      arrow: false,
-      link: '#1'
-    },
-    {
-      texto: 'Conta Digital',
-      imagem: '../assets/images/arroba1.png',
-      arrow: false,
-      link: '#2'
-    },
-    {
-      texto: 'Painel de Gestão',
-      imagem: '../assets/images/grafico1.png',
-      arrow: true,
-      link: '#3'
-    }
-  ]
+  public itemsMenu:Menu[] = []
+  
 
-  constructor() { }
+  constructor(private  menu: MenuService) { 
+  
 
+
+  }
+
+  private carregaMenu()
+  {
+     this.menu.getMenu().subscribe(
+      menuItems => this.itemsMenu = menuItems,
+                 error => console.log("Erro ma aplicação :: " + error),
+                 () => console.log("menu carregado com sucesso")
+     );
+  }
   ngOnInit() {
+    this.carregaMenu();
   }
 
 }
